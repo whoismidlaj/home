@@ -1,7 +1,7 @@
 <template>
     <div id="menu" class="hidden fixed left-0 top-0 w-screen h-screen bg-slate-900 bg-opacity-60 backdrop-blur-sm">
         <div class="h-screen py-36 mx-auto flex justify-center items-start">
-            <div class="grid grid-cols-6 gap-10">
+            <div class="grid p-5 grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-10">
                 <a href="https://mail.google.com/mail/u/0/" class="grid place-content-center gap-2 p-4 rounded-xl hover:bg-white hover:bg-opacity-5">
                     <img class="w-12 m-auto" src="../assets/logos/gmail.svg">
                     <p class="text-center text-slate-200">Gmail</p>
