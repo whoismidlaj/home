@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="fixed bottom-5 flex w-full justify-center">
         <div class="flex w-fit gap-2 bg-slate-900 bg-opacity-50 backdrop-blur-sm p-3 px-5 rounded-full">
 
@@ -31,4 +31,26 @@ const toggleMenu = () => {
   }
 };
 
+</script> -->
+
+
+<template>
+  <div class="fixed bottom-5 flex w-full justify-center">
+    <div class="flex w-fit gap-2 bg-slate-900 bg-opacity-50 backdrop-blur-sm p-3 px-5 rounded-full">
+      <a
+        v-for="app in apps"
+        :key="app.id"
+        :href="app.url"
+        class="p-3 rounded-xl hover:bg-white hover:bg-opacity-5"
+      >
+        <img class="w-8" :src="app.icon" :alt="app.id" />
+      </a>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { store } from '../store';
+
+const { apps } = store();
 </script>
